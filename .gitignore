@@ -1,0 +1,5 @@
+/target
+**/*.rs.bk
+game.iso
+/build/*.a
+/build/*.o

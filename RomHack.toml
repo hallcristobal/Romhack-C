@@ -1,0 +1,21 @@
+[info]
+game-name = "cz"
+
+[src]
+iso = "game.iso" # Provide the path of the game's ISO
+patch = "source/patch.asm"
+# Optionally specify the game's symbol map
+# map = "maps/framework.map"
+
+[files]
+# You may replace or add new files to the game here
+# "path/to/file/in/iso" = "path/to/file/on/harddrive"
+
+[build]
+map = "target/framework.map"
+iso = "target/cz.iso"
+
+[link]
+entries = ["game_loop"] # Enter the exported function names here
+base = "0x8040_1000" # Enter the start address of the Rom Hack's code here
+libs = ["build/lib.a"]
