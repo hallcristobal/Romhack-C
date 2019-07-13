@@ -15,6 +15,14 @@ cargo install romhack --git https://github.com/hallcristobal/romhack-compiler
 
 ## Config
 
+You must supply at least one library to link in the RomHack.toml
+```Toml
+...
+[link]
+libs = ["<path-to/lib>"]
+...
+```
+
 You can choose not copy or rename it if you would prefer, just make sure that the lines in
 Romhack.toml match the iso path.
 ```Toml
