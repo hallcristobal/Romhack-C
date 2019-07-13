@@ -12,8 +12,8 @@ patch = "source/patch.asm"
 # "path/to/file/in/iso" = "path/to/file/on/harddrive"
 
 [build]
-map = "target/framework.map"
-iso = "target/cz.iso"
+map = "build/framework.map"
+iso = "build/cz.iso"
 
 [link]
 entries = ["game_loop"] # Enter the exported function names here
